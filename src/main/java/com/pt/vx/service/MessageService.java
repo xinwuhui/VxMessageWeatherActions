@@ -49,7 +49,7 @@ public class MessageService {
                 if(AllConfig.OPEN_HF_WEATHER){
                     setHfWeather(map,user.getCity());
                 }else {
-                    setWeather(map, user.getAddress(), user.getCity(), AllConfig.OPEN_WEATHER_NOW ? WeatherUtil.TYPE_LIVE : WeatherUtil.TYPE_ALL);
+                    setWeather(map, user.getAddress(), user.getCity(), AllConfig.OPEN_WEATHER_NOW ? WeatherUtil.TYPE_LIVE : WeatherUtil.TYPE_LIVE);
                 }
                 setSelfDate(map);
             },POOL);
